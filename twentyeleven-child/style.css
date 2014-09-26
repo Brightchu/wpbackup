@@ -1,0 +1,219 @@
+/*
+ Theme Name:     Twenty Eleven Child
+ Theme URI:      http://example.com/twenty-thirteen-child/
+ Description:    Twenty Thirteen Child Theme
+ Author:         John Doe
+ Author URI:     http://example.com
+ Template:       twentyeleven
+ Version:        1.0.0
+*/
+
+/* =Imports styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../twentyeleven/style.css');
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+/*body {
+	font-family: "微软雅黑",inherit;
+}*/
+
+
+body {
+	background:url(images/geometry.png) repeat top left;
+        margin:0;
+	font-family: "微软雅黑",inherit;
+}
+
+#page {
+
+	margin: 0em auto;
+
+}
+
+
+/* One column */
+.one-column #page {
+	width:800px;
+        max-width: 800px;
+	margin:120px auto;
+	
+	
+}
+.one-column #content {
+	margin: 0 auto;
+	width: 85%;
+}
+.one-column #nav-below {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1.625em;
+}
+
+/* change the font-size of footer widget*/
+.widget-title {
+	color: #666;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	line-height: 2.6em;
+	text-transform: uppercase;
+}
+
+/* change the background of menu */
+
+#access {
+	background: rgba(225, 225, 225, 1);
+	/*position: absolute;*/
+	max-width: 1000px;
+	z-index:1000;
+}   
+
+
+#access a {
+	color: #5A5A5A;
+	display: block;
+	line-height: 3.333em;
+	padding: 0 1.2125em;
+	text-decoration: none;
+}
+
+#access li:hover > a,
+#access a:focus {
+	color: #1982d1;
+}
+
+
+#site-description {
+	color: #7a7a7a;
+	font-size: 14px;
+	margin: 0 270px 0.95625em 0;
+}
+
+/*change the margin of header image*/
+#branding hgroup {
+	margin: 0 5%;
+}
+
+/*show author name even there's only one */
+.single-author .entry-meta .by-author {
+	display: inline;
+}
+/**/
+#branding {
+	border-top: 2em solid rgba(187, 187, 187, 0);
+    /*background:url(images/brand-back2.jpg) no-repeat top center;*/
+	background:url(images/geometry.png) repeat top center;
+}
+
+#branding img {
+	height: auto;
+	display: block;
+	width: 100%;
+    opacity: 0.85
+}
+#site-title {
+	padding: 1.65625em 0 0;
+}
+
+/* Site Generator Line */
+
+#site-generator {
+	/*background: url(images/footer3.jpg) no-repeat top center #3f808a;*/
+	border-top: 0px solid #ddd;
+	/*width:1200px;
+	height:345px;*/
+	position:relative;
+	top:0px;
+	/*left:-100px;*/
+	font-size: 12px;
+	line-height: 2.2em;
+	padding: 0em 0em;
+	text-align: center;
+}
+#site-generator a {	color: #4C4C4C;	} 
+
+/* =Content
+----------------------------------------------- */
+
+#main {
+	clear: both;
+	padding: 0 0 0;
+}
+.left-sidebar #content {	margin: 0 7.6% 0 30%;	width: 61.8%;	/*调整home和标签页 content部分的位置和大小*/	}
+
+/* =Structure
+----------------------------------------------- */
+#primary {
+	float: left;
+	margin: 0 -26.4% 0 0;
+	width: 100%;	
+	min-height:800px;     /*调整搜索结果页面的最小长度，以适应背景设置，不然背景混乱。*/
+}
+.left-sidebar #primary{	
+
+	/*background: url(images/geometry.png)  repeat top right;	设置home，各标签页的左侧导航栏的背景*/
+	/*background: url(images/side-back.png) repeat-y top left;	设置home，各标签页的左侧导航栏的背景*/
+	
+	background: url(images/geometry-content.png) repeat-y;
+	background-color: rgb(240, 240, 240);
+	background-position: 260px 0;
+	
+}
+
+body.single  #primary{		
+
+	background: rgb(250, 250, 250);	/*单独为single post页面设置背景，因为它没有左侧导航栏*/
+
+}
+
+/* error404 */
+.error404 #primary {    /*设置404错误页面的背景*/
+	background: rgb(250, 250, 250);
+}
+.error404 #main #searchform {
+	background: inherit;
+	border: none;
+}
+
+
+.hentry,
+.no-results {
+	border-bottom: 1px solid #ddd;
+	margin: 1.625em 0 1.625em;   /*修改posts之间的行间距，原值0 0 1.625em*/
+	padding: 0 0 1.625em;
+	position: relative;
+}
+
+
+/*
+.entry-header .comments-link a {
+	background: #BDBDBD url(images/comment-bubble2.png) no-repeat;
+	color: #666;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 35px;
+	overflow: hidden;
+	padding: 0 0 0;
+	position: absolute;
+	top: 1.5em;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+	width: 43px;
+	height: 36px;
+} */
+
+#access {
+	margin: 0 auto 0px;
+}
+
+#secondary a{		color:rgb(131, 128, 128);}
+
+.left-sidebar #secondary {		margin-top:0.5em;	margin-left: 3.9%	/*调整左侧导航栏的位置*/}
+
+/*修改自定义menu的css类*/
+#access ul li.current-menu-item-new1 > a {
+	font-weight: bold;
+	color:#9C1FA7;
+}
