@@ -133,7 +133,7 @@
 				<?php get_search_form(); ?>
 			<?php endif; ?>
 
-		<div id"access_container">	
+		<div id="access_container">	
 			<nav id="access" role="navigation">
 				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
 				<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
