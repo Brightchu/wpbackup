@@ -17,7 +17,8 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 
-			<?php if ( have_posts() ) : ?>
+			<!-- hide certain catgories from homepage. -->
+			<?php if ( have_posts() ) : query_posts($query_string .'&cat=-11,-12')?>
 
 				<?php twentyeleven_content_nav( 'nav-above' ); ?>
 
